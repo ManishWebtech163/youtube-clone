@@ -10,7 +10,7 @@ import LoadingBox from './LoadingBox'
 const VideoComments = ({ videoId }) => {
     const [maxResults, setmaxResults] = useState(5)
     const { data: videoComments, isLoading: commentsLoading, isError: commentsError, isFetching: commentsFetching } = useGetVideoCommentsDataQuery({ id: videoId, maxResults })
-    console.log(videoComments, "videoComments")
+
     if (commentsLoading) {
         return (
             <div>

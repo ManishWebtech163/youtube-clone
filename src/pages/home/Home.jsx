@@ -26,7 +26,7 @@ const Home = () => {
                     <>
                         <div className="cards p-4 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" ref={contentRef}>
                             {
-                                data?.items.map((e) => (<VideoCard details={e} key={e.id} />))
+                                data?.items?.map((e) => (<VideoCard details={e} key={e.id} />))
                             }
                         </div>
                     </>
